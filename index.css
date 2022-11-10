@@ -1,0 +1,177 @@
+/* ======HEADER NAV BAR========== */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+.header-nav__container {
+    padding: 15px;
+    width: 97%;
+    position: fixed;
+    /* background-color: whitesmoke; */
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-nav__button {
+    font-size: 26px;
+    font-weight: bold;
+    color: rgb(4, 75, 4);
+}
+
+.header-nav__group {
+    font-size: 15px;
+    gap: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-nav__group #sign-up {
+    background-color: rgb(14, 207, 133);
+    color: whitesmoke;
+    font-weight: 600;
+    border-radius: 20px;
+    padding: 10px;
+    width: 70px;
+    height: 16px;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* ==========BOARD TITLE========== */
+.boards__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boards__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boards__quote {
+    font-size: 60px;
+    color: rgb(4, 75, 4);
+    height: 20px;
+    margin-top: 120px;
+}
+
+.boards__introduction {
+    color: rgb(4, 75, 4);
+    width: 100%;
+    font-weight: 550;
+    margin-bottom: 60px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* =======BOARDS BOOKING========= */
+.boards__booking { 
+    border: rgb(229, 234, 223) 1px solid;
+    max-width: 1300px;
+    margin-top: -80px;
+    width: fit-content;
+    padding: 30px;
+    border-radius: 60px;
+    box-shadow: rgb(0 0 0 / 8%) 0px 2px 4px 0px;
+    height: 60px;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "where-title date-title guest-title ."
+    "place-input date-input guest-input search-button";
+}
+
+#search-icon,
+#calendar-icon,
+#guest-icon {
+    width: 15px;
+}
+
+#search-button {
+    width: 20px;
+    background-color: rgb(14, 207, 133);
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.where-title {
+    grid-area: where-title;
+}
+.date-title {
+    grid-area: date-title;
+}
+.guest-title {
+    grid-area: guest-title;
+}
+.place-input {
+    grid-area: place-input;
+}
+.date-input {
+    grid-area: date-input;
+}
+.guest-input {
+    grid-area: guest-input;
+}
+#search-button {
+    grid-area: search-button;
+}
+
+.where-title,
+.date-title,
+.guest-title,
+.place-input,
+.date-input,
+.guest-input,
+#search-button {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.place-input,
+.date-input,
+.guest-input {
+    border: solid 1px gray;
+    width: fit-content;
+    background-color: white;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.place-input {
+    width: 95%;
+}
+
+/* ======CONTAINER 1========= */
+.container-1 {
+    border-radius: 10px;
+    display: flex;
+    /* position: relative; */
+    margin-top: 80px;
+}
+
+.large-image-1 {
+    width: 1200px;
+    height: 500px;
+    object-fit: cover;
+    margin: 0 auto;
+    border-radius: 25px;
+}
